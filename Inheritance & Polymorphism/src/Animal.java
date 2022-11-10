@@ -39,7 +39,7 @@ public class Animal {
 			for(int i = 0; i < animalList.size(); i++) {
 				animalList.get(i).move();
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
