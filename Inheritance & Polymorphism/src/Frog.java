@@ -1,5 +1,3 @@
-package sample;
-
 public class Frog extends Animal {
     public Frog () {
         moveSpeed = 5;

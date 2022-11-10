@@ -1,5 +1,3 @@
-package sample;
-
 public class Penguin extends Bird {
     int moveSpeed;
     

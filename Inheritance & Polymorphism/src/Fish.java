@@ -1,5 +1,3 @@
-package sample;
-
 public class Fish extends Animal {
     
     public Fish () {
