@@ -1,3 +1,11 @@
+/*
+ * File Name: ProgrammerBasePlusCommissionProgrammer
+ * Author: Leonardo Villalobos, 41055793
+ * Course: CST8132 - OOP
+ * Assignment: Lab 6
+ * Date: 18.Nov.2022
+ * Professor: Justin Martins
+ */
 
 // THIS IS A CODE FILE FOR LAB 6. THIS CODE FILE REQUIRES SOME MODIFICATIONS!!!
 

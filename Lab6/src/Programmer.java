@@ -80,12 +80,12 @@ public abstract class Programmer implements Payme {
 	} 
 	
 	/**
-	 * This abstract method forces this class to change to abstract class
-	 * @return
+	 * This abstract method forces this class to be changed to abstract class
+	 *
 	 */
 	//Note: We do NOT implement Payme method getPaymentAmount() here. 
 	// THEREFORE, TO AVOID A COMPILATION ERROR, YOU SHOULD DECLARE THIS CLASS AS....??
-	public abstract double earnings(); /** No implementation here. DO YOU KNOW WHY? What should this method be?*/
+	public abstract double earnings(); /* No implementation here. DO YOU KNOW WHY? What should this method be?*/
 } 
 
 

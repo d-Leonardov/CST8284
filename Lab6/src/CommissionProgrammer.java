@@ -1,10 +1,22 @@
+/*
+ * File Name: CommissionProgrammer
+ * Author: Leonardo Villalobos, 41055793
+ * Course: CST8132 - OOP
+ * Assignment: Lab 6
+ * Date: 18.Nov.2022
+ * Professor: Justin Martins
+ */
 
 // THIS IS A CODE FILE FOR LAB 6. THIS CODE FILE REQUIRES SOME MODIFICATIONS!!!
 
 //CommissionProgrammer.java
 
 //CommissionProgrammer class extends Programmer.
-
+/**
+ * Subclass of Programmer abstract superclass
+ * @author Leonardo_Villalobos
+ *
+ */
 public class CommissionProgrammer extends Programmer { 
 
 	private double grossSales; // gross weekly sales
@@ -12,6 +24,14 @@ public class CommissionProgrammer extends Programmer {
 	
 	
 	//constructor
+	/**
+	 * Constructor
+	 * @param firstName String
+	 * @param lastName String
+	 * @param socialSecurityNumber String
+	 * @param grossSales double value should be a positive value
+	 * @param commissionRate double value must be greater than 0 and less than 1
+	 */
 	public CommissionProgrammer(String firstName, String lastName, 
 	String socialSecurityNumber, double grossSales, double commissionRate ) {
 	super(firstName, lastName, socialSecurityNumber);
@@ -31,6 +51,10 @@ public class CommissionProgrammer extends Programmer {
 	} 
 	
 	//set gross sales amount on the creation of apps
+	/**
+	 * Mutator for grossSales
+	 * @param grossSales must be a positive value
+	 */
 	public void setGrossSales(double grossSales) {
 	if (grossSales < 0.0) { // validate
 	  throw new IllegalArgumentException("Gross sales must be >= 0.0");
@@ -40,11 +64,19 @@ public class CommissionProgrammer extends Programmer {
 	} 
 	
 	//return gross sales amount 
+	/**
+	 * Accessor for grossSales
+	 * @return grossSales must be a positive value
+	 */
 	public double getGrossSales() {
 		return grossSales;
 	} 
 	
 	//set commission rate
+	/**
+	 * Mutator for comissionRate
+	 * @param commissionRate value must be greater than 0 and less than 1
+	 */
 	public void setCommissionRate(double commissionRate) {
 	if (commissionRate <= 0.0 || commissionRate >= 1.0) { // validate
 	  throw new IllegalArgumentException(
@@ -55,6 +87,10 @@ public class CommissionProgrammer extends Programmer {
 	} 
 	
 	//return commission rate
+	/**
+	 * Accesor for comissionRate
+	 * @return commisionRate double value must be greater than 0 and less than 1
+	 */
 	public double getCommissionRate() {
 		return commissionRate;
 	}
@@ -63,7 +99,11 @@ public class CommissionProgrammer extends Programmer {
 	
 	//MODIFY THIS PORTION. WHY WILL THIS PORTION OF YOUR CODE REQUIRE MODIFICATION?
 	//PROVIDE THE ANSWER TO THIS QUESTION TO YOUR PROFESSOR DURING DEMO
-	
+	/**
+	 * Overridden method for Payme interface.
+	 * The name of this method has been changed from earnings to getPaymentAmount so this
+	 * class keeps under inherentance hierarchy from Payme interface instead of Programmer superclass 
+	 */
 	@Override                                                           
 	public double getPaymentAmount() {                                            
 		return getCommissionRate() * getGrossSales();                    
@@ -75,6 +115,9 @@ public class CommissionProgrammer extends Programmer {
 	//START     
 	// INSERT YOUR CODE
 	@Override
+	/**
+	 * Overridden method for Programmer abstract superclass
+	 */
 	public String toString() {
 	    // TODO Auto-generated method stub
 		return String.format("%s: %s %s\n%s: %s\n%s: $%,.2f; %s: %,.2f",
@@ -83,7 +126,11 @@ public class CommissionProgrammer extends Programmer {
 			
 	}
 	//END
-
+	/**
+	 * There is no actual implementation for this method on this class,
+	 * it has been implemented because it was inherited from an abstract superclass.
+	 * @return paymentAmount method's value
+	 */
 	@Override
 	public double earnings() {
 		return getPaymentAmount();

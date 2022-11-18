@@ -93,7 +93,7 @@ public class SalariedProgrammer extends Programmer {
 	}
 	/**
 	 * There is no real implementation for this method on this class,
-	 * it has been implemented because it was inherited from abstract superclass.
+	 * it has been implemented because it was inherited from an abstract superclass.
 	 * @return paymentAmount method's value
 	 */
 	@Override
