@@ -49,7 +49,7 @@ public class OrderHandler {
 			System.err.println(exception + " caught");
 		}
 		finally {
-			System.err.println("No exception " + IOException.class + " has been caught in this try catch statements");
+			System.err.println("No exception for " + ioExceptionSub + " has been caught in this try catch statements");
 		}
 	}
 }
